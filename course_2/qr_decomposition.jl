@@ -28,7 +28,6 @@ Q = cgs(A)
 display(Q)
 @test norm(I - Q' * Q) ≤ 1.0e-8
 
-
 function cgs_qr(A)
     # Copy the Matrix
     Q = copy(A)
